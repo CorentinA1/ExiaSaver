@@ -67,9 +67,6 @@ const char * NomMois[] = {"01", "02", "03"     , "04"  , "05"  , "06"  ,
 
 
 
-//int putenv(const char *string)  creer
-//lecture du variable d'environement  printf("HOME : %s\n", getenv("HOME"))
-//
 
 
 
