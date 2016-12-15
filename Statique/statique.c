@@ -1,23 +1,5 @@
 #include "statique.h"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*char* choisirUneImage()
 {
 
@@ -28,7 +10,7 @@
     //printf("%d\n",genImage);    //teste affichage   procedure de test
     //printf("je suis bien rentre"); //procedure de test
 
-    sprintf (temp, "%d", genImage); // pour faire plus sur un avec un chaine de caractère
+    sprintf (temp, "%d", genImage); // pour faire plus sur un avec un chaine de caractÃ¨re
     strcat (chemin, "Image");
     strcat (chemin, temp);
     strcat (chemin, ".pbm");
