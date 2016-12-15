@@ -56,7 +56,8 @@ void menustat()
 							printf ("vous avec inserer un mauvais caractere\n"); 
 						} 
 						menu=0; 
-						//printf("\n Pour revenir au menu principal tappez 0 ou bien tappez une autre touche afin de quitter le programme :"); 	
+						/*printf("\n Pour revenir au menu principal tappez 0 ou bien tappez une autre 
+		touche afin de quitter le programme :"); */	
 						int getkill(); 
 					} 
 				}
