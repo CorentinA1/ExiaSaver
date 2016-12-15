@@ -59,61 +59,42 @@ void menustat()
 						/*printf("\n Pour revenir au menu principal tappez 0 ou bien tappez une autre 
 		touche afin de quitter le programme :"); */	
 						int getkill(); 
-					} 
-				}
+	} 
+}
 
 int main(int argc, char* argv[])
 {
 	system("clear") ;
-	
     char *arguments[] = { "main", NULL };/* Tableau de char contenant les arguments (là aucun : le nom du
-       									  programme et NULL sont obligatoires)  */
-   	srand(time(NULL)); //random
-
+       								  programme et NULL sont obligatoires)  */
+   	srand(time(NULL)); //randon
 	int nbgen=rand()%3+1;    //entre 1-3
-	
 	//nbgen=1; //pour des test
-	save(nbgen);
-
-    
+	save(nbgen);    
         if (argc==2 && strcmp(argv[1],"-stat")==0)
         {
             menustat();
         }
         else
         {
-       
-
 if (nbgen ==1)
-	
-	{
-
-		printf("statique\n"); //affichage de statique
+	{	printf("statique\n"); //affichage de statique
 		if (execv("/home/aniki/Bureau/Projet/Statique/main", arguments) == -1) 
-			{
-				perror("execv");
-        		return EXIT_FAILURE;
-    		}
-
+			{perror("execv");
+        	 	return EXIT_FAILURE;
+			}
 	}
-
 else if (nbgen==2)
-	
 	{
-
-		printf("dynamique\n");
-		//execv("statique");
+	printf("dynamique\n");
+	//execv("statique"); 
 	}
-
 else if (nbgen==3)
-	
-	{
-		printf("interactif");
-	
+	{printf("interactif");
 	}
-	
-	getchar();
-	system("clear");
-	return 0;
+
+getchar();
+system("clear");
+return 0;
 }
 }
